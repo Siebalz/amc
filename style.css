@@ -1,0 +1,49 @@
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-button{
+    background: none;
+    border: none;
+    color: black;
+
+}
+.text-button:hover{
+    color: blue;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.login-button{
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+.register-button{
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
