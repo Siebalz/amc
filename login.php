@@ -1,7 +1,7 @@
 <?php 
 session_start(); // Wajib ditambahkan untuk menggunakan session
 
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
 $password = "asddsawswsas123";
 $dbname = "user_db";
