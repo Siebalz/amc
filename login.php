@@ -1,3 +1,8 @@
+<?php
+session_start();
+include "koneksi.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php 
+        if (isset($_POST['username'])){
+            $username = $_POST['username'];
+            $password = md5($_POST['password']);
+
+            $query = mysqli_query($koneksi, "SELECT*FROM user where username= '$username' and password= '$password'");
+
+            if(mysqli_num_rows($query) > 0){
+                $data = mysqli_fetch_array($query);
+                $_SESSION['user'] = $data;
+                echo '<script>
+                alert ("Selamat Datang, '.$data['username'].'");
+                    location.href="index.php";
+                    </script>';
+            }else{
+                echo '<script>alert("Username/password tidak sesuai.");</script>';
+            }
+        }
+    ?>
     <div class="container">
         <div class="login-box">
             <h2>LOGIN</h2>
