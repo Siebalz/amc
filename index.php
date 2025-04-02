@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+//mengecek apakah ada session user yg aktif jika tidak diarahkan ke login.php
+if(!isset($_SESSION['user'])){
+    header('location:login.php'); //arahkan ke login.php
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

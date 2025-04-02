@@ -21,7 +21,7 @@
                 <input type="text" placeholder="Email" id="email">
             </div>
             <div class="register-button">
-                <button onclick="register()">Register Now</button>
+                <a href="register.php">Register</a>
             </div>
 
         </div>
