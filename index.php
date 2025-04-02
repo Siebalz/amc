@@ -16,7 +16,7 @@ if(!isset($_SESSION['user'])){
 </head>
 <body style="text-align : center">
     <h1>HALAMAN ADMINISTRATOR</h1>
-    <a href="index.php">Home</a>
+    <a href="dashboard.html">Home</a>
     <a href="logout.php">Logout</a>
     <hr>
     <h3>Selamat datang, nama user</h3>

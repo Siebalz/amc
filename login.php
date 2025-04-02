@@ -32,6 +32,7 @@ include "koneksi.php";
         }
     ?>
     <form method="POST" action="">
+    <H2>Login Page</H2>
     <div class="input-group">
         <input type="text" id="username" name="username" placeholder="Username" required>
     </div>
