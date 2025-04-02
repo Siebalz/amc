@@ -31,32 +31,17 @@ include "koneksi.php";
             }
         }
     ?>
-    <div class="container">
-        <div class="login-box">
-            <h2>LOGIN</h2>
-            <p>How do i get started?</p>
-
-            <div class="input-group">
-                <input type="text" id="username" placeholder="Username">
-            </div>
-
-            <div class="input-group">
-                <input type="password" id="password" placeholder="Password">
-            </div>
-            <div class="login-button">
-                <button onclick="login()">Login Now</button>
-            </div>
-            <br>
-            <div class="register-button">
-                 <a href="register.html" class="register-button">Register</a>
-            </div>
-            <div class="social-login">
-                <p>Login with Others</p>
-                <button class="google-btn">Login with Google</button>
-                <button class="facebook-btn">Login with Facebook</button>
-            </div>
-        </div> 
+    <form method="POST" action="">
+    <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Username" required>
     </div>
-    <script src="script.js"></script>
+
+    <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+    </div>
+    <div class="login-button">
+        <button type="submit">Login Now</button>
+    </div>
+</form>
 </body>
 </html>
