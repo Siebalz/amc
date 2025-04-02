@@ -59,6 +59,7 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text")
 
+      if (modeSwitch){
       modeSwitch.addEventListener("click", () =>{
         body.classList.toggle("dark");
         if (body.classList.contains("dark")){
@@ -67,7 +68,7 @@ const body = document.querySelector("body"),
             modeText.innerText = "Dark Mode"
           }
       })
-
+    }
       toggle.addEventListener("click", () =>{
         sidebar.classList.toggle("close");
       })
